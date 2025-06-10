@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "PR ID Highlighter",
+  "version": "1.0",
+  "description": "Highlights PRs with the same ID in the title",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://github.com/*/pulls*",
+        "*://github.com/*/pull/*",
+        "*://github.com/*/*/pull/*",
+        "*://github.com/pulls"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
