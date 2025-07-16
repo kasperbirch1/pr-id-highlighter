@@ -10,7 +10,8 @@
         "*://github.com/*/pulls*",
         "*://github.com/*/pull/*",
         "*://github.com/*/*/pull/*",
-        "*://github.com/pulls"
+        "*://github.com/pulls",
+        "*://github.com/pulls/*"
       ],
       "js": ["content.js"],
       "css": ["styles.css"]
