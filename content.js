@@ -4,7 +4,7 @@ function stringToColor(str) {
     hash = str.charCodeAt(i) + ((hash << 5) - hash) + i * 13;
   }
   const hue = Math.abs(hash) % 360;
-  return `hsla(${hue}, 100%, 70%, 0.2)`;
+  return `hsla(${hue}, 100%, 70%, 0.3)`;
 }
 
 (function () {
@@ -38,7 +38,7 @@ function stringToColor(str) {
       const hue = (hash * 7) % 360;
       const saturation = 60 + (hash % 40); // between 60% and 99%
       const lightness = 40 + ((hash >> 5) % 30); // between 40% and 69%
-      return `hsla(${hue}, ${saturation}%, ${lightness}%, 0.2)`;
+      return `hsla(${hue}, ${saturation}%, ${lightness}%, 0.3)`;
     }
 
     const ids = Object.keys(idMap);
